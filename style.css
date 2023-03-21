@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    background-color: #bca39c;
+    padding: 30px 0;
+}
+
+.center{
+    text-align: center;
+}
+
+.title{
+    font-size: 50px;
+}
+
+section{
+    background-color: #ffffff2f;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+section button {
+    background-color: #ff8d8db2;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+section button:hover{
+    background-color: #fb7777b2;
+    transition: 0.3s;
+}
+section div.content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

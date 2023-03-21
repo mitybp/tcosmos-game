@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./logo.ico" type="image/x-icon">
+</head>
+<body>
+    <main id="main">
+        <section>
+            <p>Este é um jogo de conhecimento sobre o movimento escoteiro, aproveite!</p>
+            <br>
+            <p>Melhor Possível!</p>
+            <p>Sempre Alerta!</p>
+            <p>Servir!</p>
+            <div class="content">
+                <button onclick="question1();">Começar!</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        let main=document.getElementById("main");
+        let points;
+
+        question1=()=>{
+            points=0;
+            main.innerHTML="<section><h1 class='center title'>Questão 1</h1><p>Qual era o nome completo do criador do escotismo?</p><div class='content'><button onclick='question2(-20);'>Robert Smyth Baden-Powell</button><button onclick='question2(-20);'>Stephenson Baden-Powell</button><button onclick='question2(20);'>Robert Stephenson Smyth Baden-Powell</button><button onclick='question2(-20);'>Baden-Powell</button></div></section>"
+        }
+        question2=(p)=>{
+            if(p === -20) points-=20; else points+=20;
+            main.innerHTML="<section><h1 class='center title'>Questão 2</h1><p>Qual é o máximo de integrantes em uma patrulha escoteira?</p><div class='content'><button onclick='question3(-20)'>10</button><button onclick='question3(-20)'>7</button><button onclick='question3(-20)'>12</button><button onclick='question3(20)'>8</button></div></section>"
+        }
+        question3=(p)=>{
+            if(p === -20) points-=20; else points+=20;
+            main.innerHTML="<section><h1 class='center title'>Questão 3</h1><p>Onde BP foi enterrado?<p><div class='content'><button onclick='question4(20);'>Nieri, Quênia</button><button onclick='question4(-20);'>Londres, Inglaterra</button><button onclick='question4(-20);'>Luanda, Angola</button><button onclick='question4(-20);'>Lagos, Nigéria</button></div></section>"
+        }
+        question4=(p)=>{
+            if(p === -20) points-=20; else points+=20;
+            main.innerHTML="<section><h1 class='center title'>Questão 4</h1><p>Qual dos itens não é avalidado para o cordão vermelho-branco?<p><div class='content'><button onclick='question5(-20);'>Mínimo de 3 especialidades nível 2 em Serviços</button><button onclick='question5(20);'>Ter no mínimo 1 Insígnia de Modalidade</button><button onclick='question5(-20);'>Possuir cordão verde-amarelo</button><button onclick='question5(-20);'>Possuir Primeiros Socorros no nível 2</button></div></section>"
+        }
+        question5=(p)=>{
+            if(p === -20) points-=20; else points+=20;
+            main.innerHTML="<section><h1 class='center title'>Questão 5</h1><p>A chefia pode conquistar insígnias?<p><div class='content'><button onclick='finish(20);'>Sim, pode.</button><button onclick='finish(-20);'>Não, não pode.</button></div></section>"
+        }
+        finish=(p)=>{
+            if(p === -20){
+                points-=20
+                main.innerHTML="<section><h1 class='center title'>Você não conseguiu :(</h1><p>Você acertou <b>"+points+"/100</b>.</p><div class='content'><button onclick='question1();'>Recomeçar</button></div></section>";
+            }else{
+                points+=20
+                main.innerHTML="<section><h1 class='center title'>Você conseguiu!!</h1><p>Você acertou <b>"+points+"/100</b>!</p><div class='content'><button onclick='question1();'>Recomeçar</button></div></section>";
+            }
+        }
+    </script>
+</body>
+</html>
