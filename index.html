@@ -48,7 +48,7 @@
         finish=(p)=>{
             if(p === -20){
                 points-=20
-                main.innerHTML="<section><h1 class='center title'>Você não conseguiu :(</h1><p>Você acertou <b>"+points+"/100</b>.</p><div class='content'><button onclick='question1();'>Recomeçar</button></div></section>";
+                main.innerHTML="<section><h1 class='center title'>Você não conseguiu 😢</h1><p>Você acertou <b>"+(points+100)+"/100</b>.</p><div class='content'><button onclick='question1();'>Recomeçar</button></div></section>";
             }else{
                 points+=20
                 main.innerHTML="<section><h1 class='center title'>Você conseguiu!!</h1><p>Você acertou <b>"+points+"/100</b>!</p><div class='content'><button onclick='question1();'>Recomeçar</button></div></section>";
