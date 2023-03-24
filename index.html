@@ -27,32 +27,47 @@
 
         question1=()=>{
             points=0;
-            main.innerHTML="<section><h1 class='center title'>Questão 1</h1><p>Qual era o nome completo do criador do escotismo?</p><div class='content'><button onclick='question2(-20);'>Robert Smyth Baden-Powell</button><button onclick='question2(-20);'>Stephenson Baden-Powell</button><button onclick='question2(20);'>Robert Stephenson Smyth Baden-Powell</button><button onclick='question2(-20);'>Baden-Powell</button></div></section>"
+            main.innerHTML="<section><h1 class='center title'>Questão 1</h1><p>Qual era o nome completo do criador do escotismo?</p><div class='content'><button onclick='question2(-10);'>Robert Smyth Baden-Powell</button><button onclick='question2(-10);'>Stephenson Baden-Powell</button><button onclick='question2(10);'>Robert Stephenson Smyth Baden-Powell</button><button onclick='question2(-10);'>Baden-Powell</button></div></section>"
         }
         question2=(p)=>{
-            if(p === -20) points-=20; else points+=20;
-            main.innerHTML="<section><h1 class='center title'>Questão 2</h1><p>Qual é o máximo de integrantes em uma patrulha escoteira?</p><div class='content'><button onclick='question3(-20)'>10</button><button onclick='question3(-20)'>7</button><button onclick='question3(-20)'>12</button><button onclick='question3(20)'>8</button></div></section>"
+            if(p === -10) points-=10; else points+=10;
+            main.innerHTML="<section><h1 class='center title'>Questão 2</h1><p>Qual é o máximo de integrantes em uma patrulha escoteira?</p><div class='content'><button onclick='question3(-10)'>10</button><button onclick='question3(-10)'>7</button><button onclick='question3(-10)'>12</button><button onclick='question3(10)'>8</button></div></section>"
         }
         question3=(p)=>{
-            if(p === -20) points-=20; else points+=20;
-            main.innerHTML="<section><h1 class='center title'>Questão 3</h1><p>Onde BP foi enterrado?<p><div class='content'><button onclick='question4(20);'>Nieri, Quênia</button><button onclick='question4(-20);'>Londres, Inglaterra</button><button onclick='question4(-20);'>Luanda, Angola</button><button onclick='question4(-20);'>Lagos, Nigéria</button></div></section>"
+            if(p === -10) points-=10; else points+=10;
+            main.innerHTML="<section><h1 class='center title'>Questão 3</h1><p>Onde BP foi enterrado?</p><div class='content'><button onclick='question4(10);'>Nieri, Quênia</button><button onclick='question4(-10);'>Londres, Inglaterra</button><button onclick='question4(-10);'>Luanda, Angola</button><button onclick='question4(-10);'>Lagos, Nigéria</button></div></section>"
         }
         question4=(p)=>{
-            if(p === -20) points-=20; else points+=20;
-            main.innerHTML="<section><h1 class='center title'>Questão 4</h1><p>Qual dos itens não é avalidado para o cordão vermelho-branco?<p><div class='content'><button onclick='question5(-20);'>Mínimo de 3 especialidades nível 2 em Serviços</button><button onclick='question5(20);'>Ter no mínimo 1 Insígnia de Modalidade</button><button onclick='question5(-20);'>Possuir cordão verde-amarelo</button><button onclick='question5(-20);'>Possuir Primeiros Socorros no nível 2</button></div></section>"
+            if(p === -10) points-=10; else points+=10;
+            main.innerHTML="<section><h1 class='center title'>Questão 4</h1><p>Qual dos itens não é avalidado para o cordão vermelho-branco?</p><div class='content'><button onclick='question5(-10);'>Mínimo de 3 especialidades nível 2 em Serviços</button><button onclick='question5(10);'>Ter no mínimo 1 Insígnia de Modalidade</button><button onclick='question5(-10);'>Possuir cordão verde-amarelo</button><button onclick='question5(-10);'>Possuir Primeiros Socorros no nível 2</button></div></section>"
         }
         question5=(p)=>{
-            if(p === -20) points-=20; else points+=20;
-            main.innerHTML="<section><h1 class='center title'>Questão 5</h1><p>A chefia pode conquistar insígnias?<p><div class='content'><button onclick='finish(20);'>Sim, pode.</button><button onclick='finish(-20);'>Não, não pode.</button></div></section>"
+            if(p === -10) points-=10; else points+=10;
+            main.innerHTML="<section><h1 class='center title'>Questão 5</h1><p>A chefia pode conquistar insígnias?</p><div class='content'><button onclick='question6(10);'>Sim, pode.</button><button onclick='question6(-10);'>Não, não pode.</button></div></section>"
+        }
+        question6=(p)=>{
+            if(p === -10) points-=10; else points+=10;
+            main.innerHTML="<section><h1 class='center title'>Questão 6</h1><p>Em que ano BP fez o seu 1° acampamento?</p><div class='content'><button onclick='question7(-10);'>1909</button><button onclick='question7(10);'>1907</button><button onclick='question7(-10);'>1910</button><button onclick='question7(-10);'>1908</button></div></section>"
+        }
+        question7=(p)=>{
+            if(p === -10) points-=10; else points+=10;
+            main.innerHTML="<section><h1 class='center title'>Questão 7</h1><p>Qual livro BP escreveu?</p><div class='content'><button onclick='question8(-10);'>Militares para Rapazes</button><button onclick='question8(-10);'>Escotismo para Rapazes e Roças</button><button onclick='question8(10);'>Escotismo para Rapazes</button><button onclick='question8(-10);'>Escotismo para Militares</button></div></section>"
+        }
+        question8=(p)=>{
+            if(p === -10) points-=10; else points+=10;
+            main.innerHTML="<section><h1 class='center title'>Questão 8</h1><p>Qual o lema da União dos Escoteiros do Brasil?</p><div class='content'><button onclick='question9(10);'>Sempre Alerta</button><button onclick='question9(-10);'>Melhor Possivel</button><button onclick='question9(-10);'>Servir</button><button onclick='question9(-10);'>Sempre Vigilante</button></div></section>"
+        }
+        question9=(p)=>{
+            if(p === -10) points-=10; else points+=10;
+            main.innerHTML="<section><h1 class='center title'>Questão 9</h1><p>Onde BP fez seu 1° acampamento?</p><div class='content'><button onclick='question10(-10);'>cidade de Brownsea</button><button onclick='question10(-10);'>ilha de Kratos</button><button onclick='question10(-10);'>ilha de Gilwell</button><button onclick='question10(10);'>ilha de Brownsea</button></div></section>"
+        }
+        question10=(p)=>{
+            if(p === -10) points-=10; else points+=10;
+            main.innerHTML="<section><h1 class='center title'>Questão 10</h1><p>Baden-Powell ficou conhecido como...</p><div class='content'><button onclick='finish(10);'>Escoteiro chefe mundial</button><button onclick='finish(-10);'>Chefe mundial</button><button onclick='finish(-10);'>Escoteiro mundial</button><button onclick='finish(-10);'>Rei do escotismo</button></div></section>"
         }
         finish=(p)=>{
-            if(p === -20){
-                points-=20
-                main.innerHTML="<section><h1 class='center title'>Você não conseguiu 😢</h1><p>Você acertou <b>"+(points+100)+"/100</b>.</p><div class='content'><button onclick='question1();'>Recomeçar</button></div></section>";
-            }else{
-                points+=20
-                main.innerHTML="<section><h1 class='center title'>Você conseguiu!!</h1><p>Você acertou <b>"+points+"/100</b>!</p><div class='content'><button onclick='question1();'>Recomeçar</button></div></section>";
-            }
+            if(p === -10) points-=10; else points+=10;
+            main.innerHTML="<section><h1 class='center title'>Parabéns!</h1><p>Você acertou <b>"+points+"%</b> das questões!</p><div class='content'><button onclick='question1();'>Recomeçar</button></div></section>";
         }
     </script>
 </body>
